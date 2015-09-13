@@ -1,5 +1,6 @@
 package com.aai.accommodateme;
 
+import com.parse.ParseClassName;
 import com.parse.ParseFile;
 import com.parse.ParseObject;
 
@@ -9,7 +10,9 @@ import java.io.File;
 /**
  * Created by AbdulMuhsin on 9/12/2015.
  */
+@ParseClassName("Image")
 public class Image extends ParseObject {
+    public Image(){ super(); }
     public String getID(){
         return getString("objectId");
     }

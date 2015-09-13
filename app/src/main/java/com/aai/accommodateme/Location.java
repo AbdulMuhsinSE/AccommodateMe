@@ -1,12 +1,15 @@
 package com.aai.accommodateme;
 
+import com.parse.ParseClassName;
 import com.parse.ParseGeoPoint;
 import com.parse.ParseObject;
 
 /**
  * Created by AbdulMuhsin on 9/12/2015.
  */
+@ParseClassName("Location")
 public class Location extends ParseObject {
+    public Location(){ super(); }
     public String getID(){
         return getString("objectId");
     }

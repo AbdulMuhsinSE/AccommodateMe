@@ -1,5 +1,6 @@
 package com.aai.accommodateme;
 
+import com.parse.ParseClassName;
 import com.parse.ParseObject;
 
 import java.util.Date;
@@ -7,6 +8,7 @@ import java.util.Date;
 /**
  * Created by AbdulMuhsin on 9/12/2015.
  */
+@ParseClassName("User")
 public class User extends ParseObject {
 
     public User(){ super(); }
